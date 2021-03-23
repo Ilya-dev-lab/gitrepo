@@ -32,6 +32,7 @@ echo "Restore NEO4J backup"
 echo -e "\n"
 echo "1. Stop NEO4J Database"
 $NEO4J_HOME/bin/neo4j stop
+$NEO4J_HOME/bin/neo4j-admin unbind #if you are using cluster 
 echo -e "\n"
 echo "==================="
 echo "2. Deploy NEO4J dump"
